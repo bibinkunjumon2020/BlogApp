@@ -1,0 +1,45 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h3 class="text-center m-4 ">Read more on post '{{ post.title }}'</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card text-center" style="width: 30rem;">
+            <div class="card-header text-center">
+                <h2>{{ post.title }}</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><p>{{ post.content }}</p>
+                </li>
+                <li class="list-group-item"><p>Posted @ {{ post.created_at }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mt-5">
+    <form method="post" action="{% url 'comment_create' post.pk %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-warning">Add Comment</button>
+    </form>
+</div>
+
+<div class="row mt-5 mb-5 ">
+    <h3>Latest Comments</h3>
+    {% for comment in post.comments.all %}
+    <div class="card mt-2">
+        <div class="card-body">
+            <p class="card-text">{{ comment.body }}</p>
+        </div>
+        <div class="card-footer text-muted">
+            {{ comment.name }} - {{ comment.created_at }}
+        </div>
+    </div>
+    {% empty %}
+    <p>No comments yet.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

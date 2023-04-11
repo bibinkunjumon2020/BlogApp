@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h3 class="text-center m-4 ">All Posts</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for post in posts %}
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header text-center">
+                <h2>{{ post.title }}</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><p>{{ post.content }}</p>
+                </li>
+                <li class="list-group-item"><p>Posted @ {{ post.created_at }}</p>
+                </li>
+                <li class="list-group-item text-center">
+                    <a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary">see post</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}
