@@ -1,8 +1,6 @@
 
 # Blog App project
 
-A brief description of what this project does and who it's for
-
 The Blog app is a simple web application built using Django framework that allows users to create and publish blog posts. The application also includes a commenting system where users can leave comments on blog posts.
 
 The main features of the Blog app include:
