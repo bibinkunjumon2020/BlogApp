@@ -37,6 +37,14 @@ To view a post, click on the post title on the home page. You can view and leave
 7. Start the development server: python manage.py runserver
 Open your web browser and navigate to http://localhost:8000/ to access the blog application.
 
+## Screenshots:
+<img width="1436" alt="image" src="https://user-images.githubusercontent.com/104210649/231373227-0793028d-d681-4c8b-a972-abd18891b964.png">
+<img width="667" alt="image" src="https://user-images.githubusercontent.com/104210649/231373312-f0294c55-9939-49a2-a230-34a18d78cef6.png">
+<img width="1416" alt="image" src="https://user-images.githubusercontent.com/104210649/231373848-83d4a404-4ee5-410b-a893-59d0fcd5a937.png">
+<img width="1005" alt="image" src="https://user-images.githubusercontent.com/104210649/231373991-e3782c6b-796e-437c-a56c-1bd209223e46.png">
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/104210649/231374033-c0197c46-50c8-46c0-adcd-cc5d20e2f7b8.png">
+<img width="1135" alt="image" src="https://user-images.githubusercontent.com/104210649/231374122-e3fa2e38-72da-423b-80fe-2761d85b9f52.png">
+
 
 ## 🚀 About Me
 I am a skilled software developer with over three years of experience in delivering secure and reliable applications. My expertise lies in back-end user development and AI-related work. Currently, I am employed as an AI and Full Stack Django Web Developer at Sayone Technology Ltd., a US-based IT firm. I have a strong background in Python programming and am dedicated to continuously improving my skills and knowledge in the field.
